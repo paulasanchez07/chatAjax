@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+}
+
+:root{
+	--bg-body: #D6D6D6;
+	--bg-azul: #55C5D0;
+	--bg-enEspera : #d9534f;  /* Cambia color del fondo del boton En espera*/
+	--font-btn: #fff; /* Cambia color del texto de los botones*/
+	--font-Ordenando: #000; /* Cambia color del texto del boton ordenando*/
+	--font-Facturado: #55C5D0;
+	--bg-Preparando : #f0ad4e;/* Cambia color del fondo del boton Preparando*/
+	--bg-Preparado:#5bc0de;/* Cambia color del fondo del boton Preparado*/
+	--bg-Entregado:#5cb85c;/* Cambia color del fondo del boton entregado*/
+	--bg-Ordenando:#fff; /* Cambia color del fondo del boton Ordenando*/
+	--bd-Facturado:#fff;
+}
+
+body{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+}
+
+#cont_principal{
+	background-color: #FFF;
+	height: 100vh;
+	width: 100%;
+	min-width: 320px;
+	margin: auto;
+}
+
+#cont_trabajo{
+	width: 300px;
+  height: 400px;
+  background-color: var(--bg-azul);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 1em 2em;
+  border-bottom: 2px solid #ccc;
+  display: table;
+}
+
+#cont_trabajo h3,h1,input{
+	text-align: center;
+}
+
+
+#cont_trabajo button{
+	margin-top: 10%;
+	width: 40%;
+}
+
+#cont_trabajo #btnIngresar{
+	margin-right: 20%;
+}
+
+#btnRegistrar{
+	width: 40%;
+	margin: auto;
+}
+
+#btnAtras{
+	width: 40%;
+	margin-right: 20%;
+}
+
+#cont_principal_chat{
+	width: 300px;
+	height: 80vh;
+	margin: 10% auto auto auto;
+	/*padding-top: 10%;*/
+	background-color: #1976D2;
+}
+
+#cont_mensajes{
+	width: 90%;
+	height: 70%;
+	margin: 10% auto auto auto;
+	background-color: #fff;
+	overflow: scroll;
+}
+
+#cont_sur{
+	width: 90%;
+
+	height: 20%;
+	margin: 5% auto auto auto;
+}
+
+#mensaje{
+	width: 60%;
+	margin-right: 5%;
+}
+
+#btnEnviar{
+	width: 35%;
+	/*margin-right: 5%;*/
+	background-color: #BBDEFB;
+	color: #1976D2;
+}
+
+#lineaMensaje{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 0.5%;
+	background-color: #BBDEFB;
+	color: #2196F3;
+	border-radius: 5px;
+	
+}
+
+#lineaMensaje h4,h3{
+	width: 100%;
+}
+
+#lineaMensaje h3{
+	color: #000000;
+	overflow: auto;
+}

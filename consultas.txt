@@ -1,0 +1,11 @@
+DELIMITER $$
+CREATE PROCEDURE sp_registrarUsuario(in UsuarioC varchar(30), in CorreoC varchar(30),in contraseniaC varchar(30))
+BEGIN
+	select @existe := COUNT(*) AS EXISTE from usuario where usuario.nombreUsuario like usuarioC and usuario.correo like correoC;
+
+	IF @existe = 0 THEN
+
+	insert into usuario(nombreUsuario,contrasenia,correo) values (usuarioC,contraseniaC,correoC);
+
+	END IF;
+END
